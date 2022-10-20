@@ -1,0 +1,175 @@
+* {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+/* HEADER */
+.logo {
+	width: 4rem;
+	cursor: pointer;
+}
+
+.collapse {
+	justify-content: end;
+}
+
+.nav-link {
+	margin: .50rem;
+}
+
+/* TITULOS */
+
+.titulos {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.titulos__h1 {
+	font-size: 8em;
+	color: #fff;
+	font-weight: 700px;
+}
+
+.titulos__subtitulo {
+	color: #fff;
+}
+
+.main-header {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.645), rgba(0, 0, 0, 0.645)), url(../img/tienda-juegos.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+/* CARRITO */
+
+.submenu {
+	position: relative;
+}
+
+.submenu #carrito {
+	display: none;
+}
+
+.submenu:hover #carrito {
+	display: block;
+	position: absolute;
+	right: 0;
+
+	top: 100%;
+	z-index: 1;
+	background-color: white;
+	padding: 20px;
+	min-height: 400px;
+	min-width: 300px;
+}
+
+/* TARJETAS */
+.tarjetas__juegos {
+	display: flex;
+	flex-wrap: wrap;
+	margin: auto;
+	flex-direction: row;
+	justify-content: center;
+	background: #5333ed;
+}
+
+.tarjetas__div {
+	height: 500px;
+	border-radius: 8px;
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.8);
+	overflow: hidden;
+	width: 340px;
+	margin: 2rem;
+	text-align: center;
+	background: linear-gradient(0deg, #eaeaee 30%, #2cd4d9 70%);
+}
+
+.tarjetas__div:hover {
+	box-shadow: 0 12px 16px rgba(0, 0, 0, 0.8);
+}
+
+.tarjetas__img {
+	width: 100%;
+	height: 75%;
+}
+
+.tarjetas__descripcion {
+	padding: 10px;
+	font-size: 1rem;
+	font-weight: 300;
+}
+
+/* CARDS */
+
+.container{
+	display: flex;
+	flex-direction: column;
+}
+
+.cards {
+	border: 1px solid black;
+	margin: 5px;
+	padding: 5px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: baseline;
+	background-color: white;
+}
+
+.cards__hijo {
+	margin: 30px;
+}
+
+.counter {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.numero {
+	margin: 5px;
+}
+
+.container-total {
+	border: 1px solid black;
+	background-color: rgb(248, 225, 228);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 150px;
+	margin: auto;
+	padding: 5px;
+}
+
+/* FOOTER */
+footer {
+	display: flex;
+	flex-direction: column;
+	background-color: #000;
+	text-align: center;
+	align-items: center;
+	position: relative;
+	justify-content: flex-end;
+}
+
+footer__redes-sociales {
+	display: flex;
+}
+
+footer__redes-sociales__link {
+	display: flex;
+	margin: 0 26px;
+}
+
+footer .footer--p {
+	color: #fff;
+}
