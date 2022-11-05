@@ -180,20 +180,13 @@ footer {
 	align-items: center;
 	position: relative;
 	justify-content: flex-end;
+	margin-top: 2rem;
+	color: white;
 }
 
-footer__redes-sociales {
-	display: flex;
-}
 
-footer__redes-sociales__link {
-	display: flex;
-	margin: 0 26px;
-}
 
-footer .footer--p {
-	color: #fff;
-}
+
 
 
 @media only screen and (min-width: 320px) and (max-width: 576px) {
