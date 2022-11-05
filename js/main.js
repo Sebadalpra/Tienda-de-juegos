@@ -39,6 +39,10 @@ const productos = [
 
 let carrito = [];
 
+const titulos = document.querySelector(".titulos");
+
+// Llamamos a la API de pokemon con Fetch
+
 //localStorage Y JSON
 document.addEventListener("DOMContentLoaded", () => {
 	if (localStorage.getItem("carrito")) {
@@ -196,9 +200,23 @@ function pagar() {
 	console.log("pagar");
 	carrito = [];
 	renderCarrito(carrito);
-	Swal.fire({
-		title: "¡Muchas gracias por su compra!",
-	});
+
+	fetch("https://pokeapi.co/api/v2/pokemon/squirtle")
+		.then((res) => res.json())
+		.then((respuesta) => {
+			let pokeapi = respuesta.sprites.front_default;
+			Swal.fire({
+				title: "¡Pago exitoso!",
+				text: "¡Muchas gracias por su compra!",
+				imageUrl: pokeapi,
+				imageWidth: 400,
+				imageHeight: 200,
+				imageAlt: "imagen pokeapi",
+				confirmButtonText: "Okey",
+			});
+			console.log(pokeapi);
+		});
+
 	calcularTotal();
 }
 
